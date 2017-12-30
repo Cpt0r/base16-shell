@@ -17,6 +17,9 @@ base1="93/a1/a1"
 base2="ee/e8/d5"
 base3="fd/f6/e3"
 
+black=$base3
+white=$base00
+
 yellow="b5/89/00"
 orange="cb/4b/16"
 red="dc/32/2f"
@@ -26,6 +29,7 @@ blue="26/8b/d2"
 cyan="2a/a1/98"
 green="85/99/00"
 
+# light
 base16_00=$base3
 base16_01=$base2
 base16_02=$base1
@@ -35,14 +39,9 @@ base16_05=$base00
 base16_06=$base02
 base16_07=$base03
 
-base16_08=$red
-base16_09=$orange
-base16_0A=$yellow
-base16_0B=$green
-base16_0C=$cyan
-base16_0D=$blue
-base16_0E=$violet
-base16_0F=$magenta
+bright_red=$orange
+bright_cyan=$violet
+
 
 _base16_00=$( echo $base16_00 | sed 's|/||g' )
 _base16_01=$( echo $base16_01 | sed 's|/||g' )
@@ -53,23 +52,43 @@ _base16_05=$( echo $base16_05 | sed 's|/||g' )
 _base16_06=$( echo $base16_06 | sed 's|/||g' )
 _base16_07=$( echo $base16_07 | sed 's|/||g' )
 
+# base16 layout dark
 color00=$base16_00   # Black
 color01=$base16_08   # Red
 color02=$base16_0B   # Green
 color03=$base16_0A   # Yellow
 color04=$base16_0D   # Blue
-color05=$base16_0E   # Magenta (Violet)
+color05=$base16_0E   # Magenta
 color06=$base16_0C   # Cyan
 color07=$base16_05   # White
 
-color08=$baee16_03   # Bright Black
+color08=$base16_03   # Bright Black
 color09=$base16_09   # Bright Red (Orange)
 color10=$base16_01   # Bright Green
 color11=$base16_02   # Bright Yellow
 color12=$base16_04   # Bright Blue
 color13=$base16_06   # Bright Magenta
-color14=$base16_0F   # Bright Cyan (Magenta)
+color14=$base16_0F   # Bright Cyan
 color15=$base16_07   # Bright White
+
+# solarized layout dark
+# color00=$base02   # Black, base16_01
+# color01=$red      # Red, base16_08
+# color02=$green    # Green, base16_0B
+# color03=$yellow   # Yellow, base16_0A
+# color04=$blue     # Blue, base16_0D
+# color05=$magenta  # Magenta, base16_0F
+# color06=$cyan     # Cyan, base16_0C
+# color07=$base2    # White, base16_06
+
+# color08=$base03   # Bright Black, base16_00
+# color09=$orange   # Bright Red (Orange), base16_09
+# color10=$base01   # Bright Green, base16_02
+# color11=$base00   # Bright Yellow, base16_03
+# color12=$base0    # Bright Blue, base16_05
+# color13=$violet   # Bright Magenta (Violet), base16_0E
+# color14=$base1    # Bright Cyan, base16_04
+# color15=$base3    # Bright White, base16_07
 
 color_foreground=$color07   # White
 color_background=$color00   # Black
