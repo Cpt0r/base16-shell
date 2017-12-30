@@ -44,6 +44,15 @@ base16_0D=$blue
 base16_0E=$violet
 base16_0F=$magenta
 
+_base16_00=$( echo $base16_00 | sed 's|/||g' )
+_base16_01=$( echo $base16_01 | sed 's|/||g' )
+_base16_02=$( echo $base16_02 | sed 's|/||g' )
+_base16_03=$( echo $base16_03 | sed 's|/||g' )
+_base16_04=$( echo $base16_04 | sed 's|/||g' )
+_base16_05=$( echo $base16_05 | sed 's|/||g' )
+_base16_06=$( echo $base16_06 | sed 's|/||g' )
+_base16_07=$( echo $base16_07 | sed 's|/||g' )
+
 color00=$base16_00   # Black
 color01=$base16_08   # Red
 color02=$base16_0B   # Green
@@ -104,13 +113,13 @@ printf $printf_template 15 $color15
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg 93a1a1 # forground
-  printf $printf_template_custom Ph 002b36 # background
-  printf $printf_template_custom Pi 93a1a1 # bold color
-  printf $printf_template_custom Pj 586e75 # selection color
-  printf $printf_template_custom Pk 93a1a1 # selected text color
-  printf $printf_template_custom Pl 93a1a1 # cursor
-  printf $printf_template_custom Pm 002b36 # cursor text
+  printf $printf_template_custom Pg $_base16_04 # forground
+  printf $printf_template_custom Ph $_base16_00 # background
+  printf $printf_template_custom Pi $_base16_04 # bold color
+  printf $printf_template_custom Pj $_base16_02 # selection color
+  printf $printf_template_custom Pk $_base16_04 # selected text color
+  printf $printf_template_custom Pl $_base16_04 # cursor
+  printf $printf_template_custom Pm $_base16_00 # cursor text
 else
   printf $printf_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
