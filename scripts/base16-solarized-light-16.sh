@@ -92,7 +92,7 @@ color15=$base16_07   # Bright White
 
 color_foreground=$color07   # White
 color_background=$color00   # Black
-color_cursor=$color07       # White
+color_cursor=$base16_04     # Black
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
