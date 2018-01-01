@@ -39,8 +39,15 @@ base16_05=$base00
 base16_06=$base02
 base16_07=$base03
 
-bright_red=$orange
-bright_cyan=$violet
+base16_08=$red
+base16_09=$orange
+base16_0A=$yellow
+base16_0B=$green
+base16_0C=$cyan
+base16_0D=$blue
+base16_0E=$magenta
+base16_0F=$violet
+
 
 
 _base16_00=$( echo $base16_00 | sed 's|/||g' )
@@ -51,6 +58,14 @@ _base16_04=$( echo $base16_04 | sed 's|/||g' )
 _base16_05=$( echo $base16_05 | sed 's|/||g' )
 _base16_06=$( echo $base16_06 | sed 's|/||g' )
 _base16_07=$( echo $base16_07 | sed 's|/||g' )
+_base16_08=$( echo $base16_08 | sed 's|/||g' )
+_base16_09=$( echo $base16_09 | sed 's|/||g' )
+_base16_0A=$( echo $base16_0A | sed 's|/||g' )
+_base16_0B=$( echo $base16_0B | sed 's|/||g' )
+_base16_0C=$( echo $base16_0C | sed 's|/||g' )
+_base16_0D=$( echo $base16_0D | sed 's|/||g' )
+_base16_0E=$( echo $base16_0E | sed 's|/||g' )
+_base16_0F=$( echo $base16_0F | sed 's|/||g' )
 
 # base16 layout dark
 color00=$base16_00   # Black
